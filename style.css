@@ -1,0 +1,271 @@
+body {
+  background-color: #e9d2a0;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  margin: 0;
+}
+
+header h1 {
+  background-color: #63714d;
+  color: #fcdfe5;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 6em;
+  font-weight: normal;
+  margin: 0em;
+  text-align: center;
+  padding-top: 70px;
+}
+
+h1 .first-letter {
+  color: #ffb5c6;
+  font-weight: bold;
+}
+
+h2 {
+  background-color: #e9d2a0;
+  color: #63714d;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 2.5em;
+  font-weight: bold;
+  margin: 0em;
+  padding: .1em 0em .1em 0em;
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+}
+
+.about {
+  font-size: 13px;
+}
+
+.quiz-header {
+  background-color: #e9d2a0;
+  color: #63714d;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 5em;
+  font-weight: bold;
+  margin: 0em;
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+}
+
+.padding-top {
+  padding-top: 70px;
+}
+
+.no-pointer {
+  cursor: auto;
+}
+
+h3 {
+  background-color: #eed9ad;
+  color: #63714d;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 2em;
+  font-weight: bold;
+  margin: 0em;
+  padding: .1em 0em .1em 0em;
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+}
+
+a:link {
+  text-decoration: none;
+  font-weight: bold;
+  color: #63714d;
+} 
+
+a:visited {
+  text-decoration: none;
+  font-weight: bold;
+  color: #63714d;
+}
+
+a:active {
+  text-decoration: none;
+  font-weight: bold;
+  color: #63714d;
+}
+
+nav#menu ul {
+  font-family: 'Open Sans Condensed', sans-serif;
+  margin: 0;
+  padding: 1.2em 0em 1.2em 0em;
+  font-size: 1.2em;
+  background-color: #ffb5c6;
+  position: fixed;
+  text-align: right;
+  width: 100%;
+  z-index: 1;
+  height: 1.45em;
+}
+
+nav#menu li {
+  display: inline;
+  padding: 1.2em .5em;
+}
+
+nav li:hover {
+  background-color: #e2e9d4;
+}
+
+nav li a:hover {
+  text-decoration: none;
+  background-color: #e2e9d4;
+  color: #63714d;
+} 
+
+div {
+  background-color: #f6e5c0;
+}
+
+#nestedAccordion > div {
+  display: none;
+}
+
+h3 + div {
+  display: none;
+}
+
+p {
+  font-size: 16px;
+  margin: 0em auto;
+  max-width: 960px;
+  text-align: center;
+}
+
+.quizzes {
+  display: table;
+  margin: 0 auto;
+  padding-bottom: 1em;
+}
+
+#contact {
+  list-style-type: none;
+  padding: 1em 0em 1em 0em;
+  margin:0;
+  font-size: 1.2em;
+}
+
+#filler {
+  height: 70px;
+  background-color: #ffb5c6;
+}
+
+#joshu-logo {
+  margin-left: 1.5em;
+  margin-top: .3em;
+  position: fixed;
+  z-index: 2;
+}
+
+.body-text {
+  text-align: center;
+}
+
+#nav-trigger {
+  display: none;
+  width: 100%;
+  text-align: right;
+}
+
+.two-column {
+  display: inline-block;
+  width: 350px;
+}
+
+.row {
+  margin-left: auto;
+  margin-right: auto;
+  width: 710px;
+}
+
+.content {
+  margin: 0 auto;
+  display: table;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+#nav-trigger span img {
+  padding-right: 27px;
+}
+
+#nestedAccordion div div p:first-child {
+  padding: 1em 0em .5em 0em;
+}
+
+#nestedAccordion div div p {
+  padding: 0em 0em .5em 0em;
+}
+
+.description {
+  padding: 1em 0em 1em 0em;
+}
+
+.about p:first-child {
+  padding-top: 1em
+}
+
+nav#nav-mobile {
+  position: relative;
+  display: none;
+}
+
+nav#nav-mobile ul {
+  position: absolute;
+  right: 0;
+  display: none;
+  list-style-type: none;
+  width: 125px;
+  text-align: center;
+  margin-top: 68px;
+  padding: 0;
+}
+
+nav#nav-mobile li {
+  background-color: #ffb5c6;
+  padding: 10px 0px;
+  width: 125px;
+}
+
+@media only screen and (max-width: 1100px) {
+  nav#menu {
+    display: none;
+  }
+
+  #nav-trigger {
+    display: block;
+    position: fixed;
+    background-color: #ffb5c6;
+  }
+
+  #nav-trigger span img {
+    cursor: pointer;
+  }
+
+  nav#nav-mobile {
+    display: block; }
+}
+
+@media only screen and (max-width: 1000px) {
+  p {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  ul {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  header h1 {
+    font-size: 15vw;
+  }
+}
